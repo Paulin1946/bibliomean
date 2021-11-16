@@ -4,6 +4,7 @@ const router = express.Router()
 
 //http://localhost:3004/api/customers/listCustomers
 router.post("/registerCustomers", customers.registerCustomers);
+router.post("/login", customers.login);
 router.get("/listCustomers", customers.listCustomers);
 router.get("/findCustomers/:_id", customers.findCustomers);
 router.put("/updateCustomers", customers.updateCustomers);
